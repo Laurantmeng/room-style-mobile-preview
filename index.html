@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="theme-color" content="#2a2238" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 100 100%27%3E%3Ctext y=%27.9em%27 font-size=%2790%27%3E🏠%3C/text%3E%3C/svg%3E" />
+  <title>房间风格 · 手机预览</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; -webkit-tap-highlight-color: transparent; }
+    html, body { min-height: 100%; background: linear-gradient(160deg, #3a2c4c 0%, #2a2238 55%, #1e1a24 100%); color: #fff; font-family: -apple-system, "PingFang SC", "Noto Sans SC", system-ui, sans-serif; }
+    main { min-height: 100vh; min-height: 100dvh; display: flex; flex-direction: column; justify-content: center; gap: 18px; max-width: 520px; margin: 0 auto;
+      padding: calc(env(safe-area-inset-top) + 28px) calc(env(safe-area-inset-right) + 20px) calc(env(safe-area-inset-bottom) + 28px) calc(env(safe-area-inset-left) + 20px); }
+    h1 { font-size: 26px; font-weight: 700; letter-spacing: .5px; }
+    .sub { font-size: 14px; opacity: .75; margin-top: -8px; }
+    a.card { display: flex; align-items: center; gap: 16px; min-height: 108px; padding: 20px 22px; border-radius: 22px; text-decoration: none; color: #2a1d10; box-shadow: 0 10px 30px rgba(0,0,0,.3); transition: transform .1s; }
+    a.card:active { transform: scale(.97); }
+    a.card .emoji { font-size: 44px; line-height: 1; }
+    a.card .t { font-size: 24px; font-weight: 700; }
+    a.card .d { font-size: 13px; opacity: .75; margin-top: 4px; }
+    a.card .go { margin-left: auto; font-size: 26px; opacity: .6; }
+    .mini { background: linear-gradient(135deg, #fff3e2, #ead2b0); }
+    .toon { background: linear-gradient(135deg, #ffb3cf, #b9a2f0); color: #2a1840; }
+    .tip { display: flex; gap: 10px; flex-wrap: wrap; justify-content: center; font-size: 14px; }
+    .tip span { padding: 8px 14px; border-radius: 999px; background: rgba(255,255,255,.1); border: 1px solid rgba(255,255,255,.18); }
+    footer { text-align: center; font-size: 12px; opacity: .5; }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>卧室 · 两种风格预览</h1>
+    <p class="sub">实时 3D，点开即可用手指转动查看</p>
+    <a class="card mini" href="./miniature/">
+      <span class="emoji">🏠</span>
+      <div><div class="t">微缩模型</div><div class="d">移轴景深 · 柔和暖光</div></div>
+      <span class="go">›</span>
+    </a>
+    <a class="card toon" href="./cartoon/">
+      <span class="emoji">🎨</span>
+      <div><div class="t">美式卡通</div><div class="d">卡通描边 · 高饱和色块</div></div>
+      <span class="go">›</span>
+    </a>
+    <div class="tip"><span>☝️ 单指拖动旋转</span><span>🤏 双指缩放</span></div>
+    <footer>首次加载需联网获取 three.js（约 1MB）</footer>
+  </main>
+</body>
+</html>
